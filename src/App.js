@@ -24,7 +24,17 @@ const imageData = ()=>{
 }
 
 function App() {
-  // code here
+  let imgdata = imageData();
+  console.log(imgdata);
+  return <>   
+  <h1>Kalvium Library</h1>
+  <div className='flex'>
+  <img src={imgdata[1].img} alt=""  />
+  <img src={imgdata[1].img} alt=""  />
+  <img src={imgdata[1].img} alt=""  />
+  <img src={imgdata[1].img} alt=""  />
+  </div>
+  </>
 }
 
 export default App;
